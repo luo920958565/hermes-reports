@@ -1,30 +1,39 @@
 {
   "date": "2026-04-29",
-  "timestamp": "2026-04-29T11:51:48.724568+00:00",
+  "timestamp": "2026-04-29T20:01:44.959845+00:00",
   "snapshot": {
-    "facts": 178,
-    "episodes": 139,
-    "patterns": 91,
-    "skills": 42,
-    "relationships": 60,
-    "traces": 131,
-    "evaluations": 39,
+    "facts": 228,
+    "episodes": 171,
+    "patterns": 121,
+    "skills": 53,
+    "relationships": 111,
+    "traces": 161,
+    "evaluations": 51,
     "skill_categories": {
       "analysis": 1,
-      "general": 37,
-      "research": 4
+      "build": 2,
+      "debug": 1,
+      "general": 42,
+      "research": 5,
+      "self_improve": 2
     },
     "top_facts": [
       {
         "subject": "Hermes Core Database",
         "predicate": "has_size",
-        "object": "0.4 MB",
+        "object": "0.6 MB",
+        "confidence": 1.0
+      },
+      {
+        "subject": "table:working_memory",
+        "predicate": "has_structure",
+        "object": "0 rows, 5 columns: id, created_at, content, source, expiry_at",
         "confidence": 1.0
       },
       {
         "subject": "table:traces",
         "predicate": "has_structure",
-        "object": "113 rows, 13 columns: id, parent_trace_id, session_id, task, plan, started_at, ended_at, duration_ms...",
+        "object": "161 rows, 13 columns: id, parent_trace_id, session_id, task, plan, started_at, ended_at, duration_ms...",
         "confidence": 1.0
       },
       {
@@ -36,43 +45,37 @@
       {
         "subject": "table:skills",
         "predicate": "has_structure",
-        "object": "25 rows, 11 columns: id, at, name, category, description, steps, prerequisites, success_rate...",
+        "object": "53 rows, 11 columns: id, at, name, category, description, steps, prerequisites, success_rate...",
         "confidence": 1.0
       },
       {
         "subject": "table:sessions",
         "predicate": "has_structure",
-        "object": "15 rows, 5 columns: id, started_at, ended_at, model, task",
+        "object": "21 rows, 5 columns: id, started_at, ended_at, model, task",
         "confidence": 1.0
       },
       {
         "subject": "table:semantic_memory",
         "predicate": "has_structure",
-        "object": "0 rows, 6 columns: id, timestamp, content, tags, source, confidence",
+        "object": "123 rows, 7 columns: id, timestamp, content, tags, source, confidence, score",
         "confidence": 1.0
       },
       {
         "subject": "table:relationships",
         "predicate": "has_structure",
-        "object": "40 rows, 7 columns: id, at, source_id, target_id, rel_type, strength, evidence",
+        "object": "111 rows, 7 columns: id, at, source_id, target_id, rel_type, strength, evidence",
         "confidence": 1.0
       },
       {
         "subject": "table:patterns",
         "predicate": "has_structure",
-        "object": "63 rows, 8 columns: id, at, name, description, confidence, evidence_count, tags, last_observed",
+        "object": "121 rows, 8 columns: id, at, name, description, confidence, evidence_count, tags, last_observed",
         "confidence": 1.0
       },
       {
         "subject": "table:meta",
         "predicate": "has_structure",
-        "object": "1 rows, 2 columns: key, value",
-        "confidence": 1.0
-      },
-      {
-        "subject": "table:goals",
-        "predicate": "has_structure",
-        "object": "0 rows, 10 columns: id, at, session_id, description, status, progress, priority, parent_goal_id...",
+        "object": "250 rows, 2 columns: key, value",
         "confidence": 1.0
       }
     ],
@@ -130,78 +133,78 @@
     ],
     "recent_traces": [
       {
-        "task": "\u81ea\u6211\u5ba1\u8ba1\uff1a\u68c0\u67e5AutoLearner\u4ee3\u7801\u4e2d\u7684\u91cd\u590d\u903b\u8f91\u548c\u53ef\u62bd\u8c61\u6a21\u5f0f",
+        "task": "\u6784\u5efa\u4e00\u4e2a\u7cfb\u7edf\u53d8\u5316\u68c0\u6d4b\u5668\uff0c\u5bf9\u6bd4AutoLearner\u4e24\u6b21\u8fd0\u884c\u95f4\u7684\u589e\u91cf",
         "outcome": "completed",
         "quality_score": 0.7,
-        "started_at": "2026-04-29T11:44:37.115434+00:00"
-      },
-      {
-        "task": "\u8bbe\u8ba1Hermes Core\u6a21\u5757\u95f4\u7684\u53bb\u8026\u5408\u901a\u4fe1\u534f\u8bae",
-        "outcome": "completed",
-        "quality_score": 0.7,
-        "started_at": "2026-04-29T11:44:37.037596+00:00"
-      },
-      {
-        "task": "\u6392\u67e5AutoLearner skill\u84b8\u998f\u4e2d\u91cd\u590d\u6280\u80fd\u540d\u7684\u53bb\u91cd\u95ee\u9898",
-        "outcome": "completed",
-        "quality_score": 0.7,
-        "started_at": "2026-04-29T11:44:36.956847+00:00"
-      },
-      {
-        "task": "\u7528MCP GitHub\u641c\u7d22Python AST\u5206\u6790\u5de5\u5177\u7684\u6027\u80fd\u57fa\u51c6",
-        "outcome": "completed",
-        "quality_score": 0.7,
-        "started_at": "2026-04-29T11:44:36.876704+00:00"
-      },
-      {
-        "task": "\u6784\u5efaAutoLearner\u7684task_analyzer\u6a21\u5757\uff0c\u5206\u6790\u5df2\u5b8c\u6210\u4efb\u52a1\u7684\u77e5\u8bc6\u5bc6\u5ea6",
-        "outcome": "completed",
-        "quality_score": 0.7,
-        "started_at": "2026-04-29T11:44:36.774826+00:00"
+        "started_at": "2026-04-29T20:01:34.758768+00:00"
       },
       {
         "task": "\u7528tree-sitter\u5206\u6790Hermes Core\u4ee3\u7801\u7684AST\u590d\u6742\u5ea6\uff0c\u8bc6\u522b\u6700\u6df1\u5d4c\u5957\u51fd\u6570",
         "outcome": "completed",
         "quality_score": 0.7,
-        "started_at": "2026-04-29T11:44:05.646108+00:00"
+        "started_at": "2026-04-29T20:01:34.624026+00:00"
       },
       {
-        "task": "\u8bc4\u4f30knowledge_query\u7684\u67e5\u8be2\u7ed3\u679c\u6392\u5e8f\u8d28\u91cf\uff0c\u4f18\u5316\u6392\u5e8f\u7b97\u6cd5",
+        "task": "\u81ea\u6211\u5ba1\u8ba1\uff1a\u68c0\u67e5AutoLearner\u4ee3\u7801\u4e2d\u7684\u91cd\u590d\u903b\u8f91\u548c\u53ef\u62bd\u8c61\u6a21\u5f0f",
         "outcome": "completed",
         "quality_score": 0.7,
-        "started_at": "2026-04-29T11:40:19.386694+00:00"
+        "started_at": "2026-04-29T20:01:34.479970+00:00"
       },
       {
-        "task": "\u8bbe\u8ba1AutoLearner\u7684\u81ea\u9002\u5e94\u8c03\u5ea6\u5668\uff0c\u6309\u4efb\u52a1\u5386\u53f2\u6210\u529f\u7387\u52a8\u6001\u8c03\u6743",
+        "task": "\u8bbe\u8ba1Hermes Core\u6a21\u5757\u95f4\u7684\u53bb\u8026\u5408\u901a\u4fe1\u534f\u8bae",
         "outcome": "completed",
         "quality_score": 0.7,
-        "started_at": "2026-04-29T11:40:19.303843+00:00"
+        "started_at": "2026-04-29T20:01:34.361165+00:00"
       },
       {
-        "task": "\u6392\u67e5AutoLearner skill\u84b8\u998f\u4e2d\u91cd\u590d\u6280\u80fd\u540d\u7684\u53bb\u91cd\u95ee\u9898",
+        "task": "\u8bca\u65adknowledge_query --query\u5728keywords\u8fc7\u591a\u65f6\u7684\u6027\u80fd\u9000\u5316",
         "outcome": "completed",
         "quality_score": 0.7,
-        "started_at": "2026-04-29T11:40:19.219721+00:00"
+        "started_at": "2026-04-29T20:01:34.215992+00:00"
       },
       {
-        "task": "\u8c03\u7814FTS5 vs LIKE\u5728knowledge_query\u4e2d\u7684\u641c\u7d22\u7cbe\u5ea6\u5dee\u5f02",
+        "task": "\u7528MCP GitHub\u641c\u7d22Python AST\u5206\u6790\u5de5\u5177\u7684\u6027\u80fd\u57fa\u51c6",
         "outcome": "completed",
         "quality_score": 0.7,
-        "started_at": "2026-04-29T11:40:19.135958+00:00"
+        "started_at": "2026-04-29T20:01:34.060986+00:00"
+      },
+      {
+        "task": "\u4e3aknowledge_query\u589e\u52a0\u8bed\u4e49\u805a\u7c7b\u529f\u80fd\uff0c\u6309\u4e3b\u9898\u5206\u7ec4facts",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-04-29T20:01:33.891863+00:00"
+      },
+      {
+        "task": "\u7528tree-sitter\u5206\u6790Hermes Core\u4ee3\u7801\u7684AST\u590d\u6742\u5ea6\uff0c\u8bc6\u522b\u6700\u6df1\u5d4c\u5957\u51fd\u6570",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-04-29T20:01:33.720665+00:00"
+      },
+      {
+        "task": "\u5206\u6790AutoLearner\u8fc7\u53bb24\u5c0f\u65f6\u7684\u5b66\u4e60\u6548\u7387\uff0c\u4f18\u5316\u4efb\u52a1\u9009\u62e9\u7b56\u7565",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-04-29T20:01:33.543026+00:00"
+      },
+      {
+        "task": "\u8bbe\u8ba1AutoLearner\u7684\u4efb\u52a1\u96be\u5ea6\u5206\u7ea7\u7cfb\u7edf\uff0c\u6309\u590d\u6742\u5ea6\u5206Level 1-5",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-04-29T20:01:33.356120+00:00"
       }
     ],
     "episode_tags": {
-      "auto_learned": 129,
-      "\u8bbe\u8ba1hermes": 10,
+      "auto_learned": 159,
+      "\u8bbe\u8ba1hermes": 11,
       "\u8c03\u67e5wsl2\u4e2d\u6587\u4ef6io\u6027\u80fd\u95ee\u9898": 9,
       "\u68c0\u67e5hermes": 9,
       "\u5206\u6790\u5f53\u524dwsl2\u73af\u5883\u7684\u7cfb\u7edf\u8d44\u6e90\u74f6\u9888": 8,
       "\u8bbe\u8ba1\u4e00\u4e2a\u5c42\u7ea7\u5316\u7684\u6280\u80fd\u7ba1\u7406\u7cfb\u7edf": 7,
       "\u5206\u6790hermes": 6,
       "\u4e3ahermes": 6,
-      "\u8c03\u7814\u5f53\u524dai": 5,
-      "\u8c03\u7814wsl2\u73af\u5883\u4e0b\u6700\u4f73\u7684\u6027\u80fd\u4f18\u5316\u7b56\u7565": 5
+      "\u7528mcp": 6,
+      "\u8c03\u7814\u5f53\u524dai": 5
     },
-    "db_size_mb": 0.5
+    "db_size_mb": 0.7
   }
 }
