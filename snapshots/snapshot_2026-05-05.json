@@ -1,0 +1,210 @@
+{
+  "date": "2026-05-05",
+  "timestamp": "2026-05-05T20:04:37.522576+00:00",
+  "snapshot": {
+    "facts": 346,
+    "episodes": 291,
+    "patterns": 221,
+    "skills": 53,
+    "relationships": 2160,
+    "traces": 281,
+    "evaluations": 81,
+    "skill_categories": {
+      "analysis": 1,
+      "build": 2,
+      "debug": 1,
+      "general": 42,
+      "research": 5,
+      "self_improve": 2
+    },
+    "top_facts": [
+      {
+        "subject": "Hermes Core Database",
+        "predicate": "has_size",
+        "object": "1.5 MB",
+        "confidence": 1.0
+      },
+      {
+        "subject": "table:working_memory",
+        "predicate": "has_structure",
+        "object": "0 rows, 5 columns: id, created_at, content, source, expiry_at",
+        "confidence": 1.0
+      },
+      {
+        "subject": "table:traces",
+        "predicate": "has_structure",
+        "object": "281 rows, 13 columns: id, parent_trace_id, session_id, task, plan, started_at, ended_at, duration_ms...",
+        "confidence": 1.0
+      },
+      {
+        "subject": "table:trace_steps",
+        "predicate": "has_structure",
+        "object": "10 rows, 13 columns: id, trace_id, parent_step_id, seq, at, tool, action, input_summary...",
+        "confidence": 1.0
+      },
+      {
+        "subject": "table:sqlite_stat1",
+        "predicate": "has_structure",
+        "object": "31 rows, 3 columns: tbl, idx, stat",
+        "confidence": 1.0
+      },
+      {
+        "subject": "table:skills",
+        "predicate": "has_structure",
+        "object": "53 rows, 11 columns: id, at, name, category, description, steps, prerequisites, success_rate...",
+        "confidence": 1.0
+      },
+      {
+        "subject": "table:sessions",
+        "predicate": "has_structure",
+        "object": "27 rows, 5 columns: id, started_at, ended_at, model, task",
+        "confidence": 1.0
+      },
+      {
+        "subject": "table:semantic_memory",
+        "predicate": "has_structure",
+        "object": "276 rows, 7 columns: id, timestamp, content, tags, source, confidence, score",
+        "confidence": 1.0
+      },
+      {
+        "subject": "table:relationships",
+        "predicate": "has_structure",
+        "object": "2160 rows, 7 columns: id, at, source_id, target_id, rel_type, strength, evidence",
+        "confidence": 1.0
+      },
+      {
+        "subject": "table:patterns",
+        "predicate": "has_structure",
+        "object": "221 rows, 8 columns: id, at, name, description, confidence, evidence_count, tags, last_observed",
+        "confidence": 1.0
+      }
+    ],
+    "top_patterns": [
+      {
+        "name": "relation:related_to",
+        "confidence": 1.0,
+        "evidence_count": 14004
+      },
+      {
+        "name": "relation:related",
+        "confidence": 1.0,
+        "evidence_count": 62
+      },
+      {
+        "name": "relation:same_subject",
+        "confidence": 1.0,
+        "evidence_count": 36
+      },
+      {
+        "name": "relation:same_object",
+        "confidence": 1.0,
+        "evidence_count": 25
+      },
+      {
+        "name": "Task #1 \u2192 completed",
+        "confidence": 0.9,
+        "evidence_count": 1
+      },
+      {
+        "name": "Task #1 \u2192 completed",
+        "confidence": 0.9,
+        "evidence_count": 1
+      },
+      {
+        "name": "Task #10 \u2192 completed",
+        "confidence": 0.9,
+        "evidence_count": 1
+      },
+      {
+        "name": "Task #2 \u2192 completed",
+        "confidence": 0.9,
+        "evidence_count": 1
+      },
+      {
+        "name": "Task #3 \u2192 completed",
+        "confidence": 0.9,
+        "evidence_count": 1
+      },
+      {
+        "name": "Task #4 \u2192 completed",
+        "confidence": 0.9,
+        "evidence_count": 1
+      }
+    ],
+    "recent_traces": [
+      {
+        "task": "\u4e3aknowledge_query\u589e\u52a0\u8bed\u4e49\u805a\u7c7b\u529f\u80fd\uff0c\u6309\u4e3b\u9898\u5206\u7ec4facts",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-05-05T20:04:20.547453+00:00"
+      },
+      {
+        "task": "\u7528tree-sitter\u5206\u6790Hermes Core\u4ee3\u7801\u7684AST\u590d\u6742\u5ea6\uff0c\u8bc6\u522b\u6700\u6df1\u5d4c\u5957\u51fd\u6570",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-05-05T20:04:20.449284+00:00"
+      },
+      {
+        "task": "\u8bc4\u4f30knowledge_query\u7684\u67e5\u8be2\u7ed3\u679c\u6392\u5e8f\u8d28\u91cf\uff0c\u4f18\u5316\u6392\u5e8f\u7b97\u6cd5",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-05-05T20:04:20.351447+00:00"
+      },
+      {
+        "task": "\u8bbe\u8ba1AutoLearner\u7684\u81ea\u9002\u5e94\u8c03\u5ea6\u5668\uff0c\u6309\u4efb\u52a1\u5386\u53f2\u6210\u529f\u7387\u52a8\u6001\u8c03\u6743",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-05-05T20:04:20.250641+00:00"
+      },
+      {
+        "task": "\u8bca\u65adknowledge_query --query\u5728keywords\u8fc7\u591a\u65f6\u7684\u6027\u80fd\u9000\u5316",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-05-05T20:04:20.153071+00:00"
+      },
+      {
+        "task": "\u8c03\u7814Hermes Core\u5404\u6a21\u5757\u7684\u6d4b\u8bd5\u8986\u76d6\u7387\uff0c\u627e\u51fa\u672a\u8986\u76d6\u7684\u5173\u952e\u8def\u5f84",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-05-05T20:04:20.055842+00:00"
+      },
+      {
+        "task": "\u6784\u5efaAutoLearner\u7684task_analyzer\u6a21\u5757\uff0c\u5206\u6790\u5df2\u5b8c\u6210\u4efb\u52a1\u7684\u77e5\u8bc6\u5bc6\u5ea6",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-05-05T20:04:19.957067+00:00"
+      },
+      {
+        "task": "\u7528tree-sitter\u5206\u6790Hermes Core\u4ee3\u7801\u7684AST\u590d\u6742\u5ea6\uff0c\u8bc6\u522b\u6700\u6df1\u5d4c\u5957\u51fd\u6570",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-05-05T20:03:48.639939+00:00"
+      },
+      {
+        "task": "\u4f18\u5316AutoLearner\u7684_learned_skills\u76ee\u5f55\u6587\u4ef6\u5360\u7528\uff0c\u53bb\u6389\u4f4e\u4e8e\u9608\u503c\u7684\u6280\u80fd",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-05-05T20:03:48.543319+00:00"
+      },
+      {
+        "task": "\u8bbe\u8ba1Hermes Core\u6a21\u5757\u95f4\u7684\u53bb\u8026\u5408\u901a\u4fe1\u534f\u8bae",
+        "outcome": "completed",
+        "quality_score": 0.7,
+        "started_at": "2026-05-05T20:03:48.445990+00:00"
+      }
+    ],
+    "episode_tags": {
+      "auto_learned": 279,
+      "\u8bbe\u8ba1hermes": 16,
+      "\u8bca\u65adknowledge_query": 12,
+      "\u8c03\u7814sqlite": 10,
+      "\u4f18\u5316autolearner\u7684_learned_skills\u76ee\u5f55\u6587\u4ef6\u5360\u7528\uff0c\u53bb\u6389\u4f4e\u4e8e\u9608\u503c\u7684\u6280\u80fd": 10,
+      "\u68c0\u67e5db\u4e2dorphan": 10,
+      "\u8bc4\u4f30autolearner\u7684skill\u84b8\u998f\u8d28\u91cf\uff0c\u5bf9\u6bd4disk\u548cdb\u4e2dskills\u7684\u5dee\u5f02": 10,
+      "\u8c03\u67e5wsl2\u4e2d\u6587\u4ef6io\u6027\u80fd\u95ee\u9898": 9,
+      "\u68c0\u67e5hermes": 9,
+      "\u5206\u6790knowledge_query\u7684\u67e5\u8be2\u6027\u80fd\uff0c\u8bc6\u522b\u6162\u67e5\u8be2\u6a21\u5f0f": 9
+    },
+    "db_size_mb": 1.5
+  }
+}
